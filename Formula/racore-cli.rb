@@ -10,7 +10,7 @@ class RacoreCli < Formula
 
   on_macos do
     url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.1.0/racore-cli_0.1.0_darwin_all.tar.gz"
-    sha256 "749be48e6d38ca51763fb14326e48e5af709dc2d2f69a7946ddd4bf4cf135667"
+    sha256 "90f23e93a0cccb4a54b219d2788283ad15c0c5d8a16ffbb7c375c8131021fe3c"
 
     define_method(:install) do
       bin.install "racore-cli"
@@ -20,14 +20,14 @@ class RacoreCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.1.0/racore-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "490418bb1ba0220094d13d8b6d684526db2d43db738fe66f0b730fe743200cab"
+      sha256 "e94f1ae1d04d495ffb41fe06e987bef695cd71a06d9c0d9ceb80016a67495e13"
       define_method(:install) do
         bin.install "racore-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.1.0/racore-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "df09aef39dcaf37450071395081c3cc1b1a5b388097b3613b12a70641daf00d4"
+      sha256 "bebea868be104fb14e9fb6bfe9b80209382b852a7ff0392c90daa10f9df40165"
       define_method(:install) do
         bin.install "racore-cli"
       end
