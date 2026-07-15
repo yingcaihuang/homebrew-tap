@@ -5,12 +5,12 @@
 class RacoreCli < Formula
   desc "Racore Cloud CDN CLI with MCP protocol support for AI agents"
   homepage "https://github.com/yingcaihuang/Racore-cli"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
-    url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.2.2/racore-cli_0.2.2_darwin_all.tar.gz"
-    sha256 "6e85c8bb6019b10ed96d4cdd33ab6a3c2c4277a269e0ff6cd21d9f12d2996155"
+    url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.2.3/racore-cli_0.2.3_darwin_all.tar.gz"
+    sha256 "9510cd16997cfd70aba136d445bf08eb9a03879be0f01d063656fbac6b1e1f19"
 
     define_method(:install) do
       bin.install "racore-cli"
@@ -19,15 +19,15 @@ class RacoreCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.2.2/racore-cli_0.2.2_linux_amd64.tar.gz"
-      sha256 "c72355adaf48050cf01091a46634e9daf3e1a30ea207750046675aa86676a9f3"
+      url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.2.3/racore-cli_0.2.3_linux_amd64.tar.gz"
+      sha256 "8224745d174a7c323f2fdaf5c3367a55e4554807adb7a8c44954b2154b4f5679"
       define_method(:install) do
         bin.install "racore-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.2.2/racore-cli_0.2.2_linux_arm64.tar.gz"
-      sha256 "f48970e4fa98fed1bd9a8020cb050edd0c1120e4e4b9bf1a01c130ae3659e6b0"
+      url "https://github.com/yingcaihuang/Racore-cli/releases/download/v0.2.3/racore-cli_0.2.3_linux_arm64.tar.gz"
+      sha256 "13e01fbac0b93a5ac25244c5362bc5e07c46abb500250ae78e70d6d8a47cbfe0"
       define_method(:install) do
         bin.install "racore-cli"
       end
